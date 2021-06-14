@@ -8,7 +8,7 @@ const initialState = {
     email: "",
     picture: "",
   },
-  authenticated: false,
+  authenticate: false,
   authenticating: false,
 };
 
@@ -27,6 +27,7 @@ export default (state = initialState, action) => {
         user: action.payload.user,
         token: action.payload.token,
         authenticate: true,
+        authenticating: false,
       };
       break;
   }
