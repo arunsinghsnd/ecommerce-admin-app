@@ -4,8 +4,14 @@ import { NavLink, Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Container>
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      bg="dark"
+      variant="dark"
+      style={{ zIndex: 1 }}
+    >
+      <Container fluid>
         {/* <Navbar.Brand href="#home">Admin Dashboard</Navbar.Brand> */}
         <Link to="/" className="navbar-brand">
           Admin Dashboard
