@@ -29,6 +29,10 @@ export default (state = initialState, action) => {
         authenticate: true,
         authenticating: false,
       };
+    case authConstants.LOGOUT_REQUEST:
+      state = {
+        ...initialState,
+      };
       break;
   }
   return state;
